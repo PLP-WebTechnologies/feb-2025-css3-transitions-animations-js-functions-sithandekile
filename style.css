@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #5d055a;
+}
+
+h1 {
+  color: #fff;
+}
+
+.input-section {
+  margin: 1rem 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #032710;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.clear-btn {
+  margin-top: 2rem;
+  background-color: #032710;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background-color: white;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Confirmation Animation */
+.verify {
+  color: #0aad46;
+  font-weight: bold;
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.verify.show {
+  animation: fadeInOut 1.5s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
